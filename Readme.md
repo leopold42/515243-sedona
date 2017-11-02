@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Олег Семенов](https://up.htmlacademy.ru/htmlcss/19/user/515243).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Рогатнев](https://htmlacademy.ru/profile/nikita_rogatnev).
 
 ---
 
