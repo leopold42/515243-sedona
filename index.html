@@ -74,7 +74,7 @@
 
       <section class="features more">
         <h2 class="visually-hidden">Особенности</h2>
-        <ul>
+        <ul class="features-list">
           <li class="features-item">
             <h3>Жилье</h3>
             <p>Рекомендуем пожить в настоящем<br>
@@ -93,29 +93,33 @@
       </section>
 
       <section class="features">
-        <h2>Там есть мост дьявола</h2>
-        <span>- №2 -</span>
-        <p>Да, по нему можно пройти! Если конечно<br>
-          вы осмелитесь</p>
-        <img src="#" alt="мост дьявола">
+        <div class="features-text">
+          <h2 class="features-title">Там есть мост дьявола</h2>
+          <span>- №2 -</span>
+          <p class="features-description">Да, по нему можно пройти! Если конечно<br>
+            вы осмелитесь</p>
+        </div>
+        <div class="features-img">
+          <img src="#" alt="мост дьявола">
+        </div>
       </section>
 
-      <section class="features">
+      <section class="features other">
         <h2 class="visually-hidden">Остальные особенности</h2>
-        <ul>
-          <li class="other-features">
+        <ul class="other-list">
+          <li class="other-item">
             <h2>Небольшая площадь</h2>
             <span>- №3 -</span>
             <p>Все достопримечательности<br>
             находятся очень близко</p>
           </li>
-          <li class="other-features">
+          <li class="other-item">
             <h2>Красивая дорога</h2>
             <span>- №4 -</span>
             <p>Ехать в Седону из Лас-Вегаса совсем<br>
             не скучно!</p>
           </li>
-          <li class="other-features">
+          <li class="other-item">
             <h2>Мало туристов</h2>
             <span>- №5 -</span>
             <p>Большинство едет в Гранд-Каньон и<br>
@@ -153,11 +157,11 @@
         </h2>
         <p>
           Дата заезда: <span>24 апреля 2016</span>
-          <button>#</button>
+          <!--здесь будет форма-->
         </p>
         <p>
           Дата выезда: <span>4 июля 2016</span>
-          <button>#</button>
+          <!--Здесь будет форма-->
         </p>
         <p>
           Взрослые: <span>2</span>
@@ -170,9 +174,11 @@
       </section>
     </main>
     <footer class="main-footer">
-      <p class="hashtag">
-        <b>#VISITSEDONA</b>
-      </p>
+      <div class="hashtag">
+        <a>
+          <b>#VISITSEDONA</b>
+        </a>
+      </div>
 
       <div class="social">
         <ul class="social-list">
@@ -190,6 +196,7 @@
 
       <p class="copyright">
         <a class="copy-link" href="https://htmlacademy.ru/intensive/htmlcss">
+          <span>Website by</span>
           <img src="img/copyright.jpg" width="120" height="30" alt="Сайт сделан HTML Academy">
         </a>
       </p>
