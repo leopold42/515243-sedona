@@ -43,13 +43,12 @@
       </h1>
 
       <div class="welcome">
-        <img src="img/welcome.jpg" width="1200" height="780" alt="Welcome to the gorgeous Sedona">
+        <img src="img/welcome.jpg" width="1200" height="508" alt="Welcome to the gorgeous Sedona">
       </div>
 
       <section class="intro">
         <h2 class="intro-title">
-          Седона - небольшой городок в Аризоне,<br>
-          заслуживающий большего
+          Седона - небольшой городок в Аризоне, заслуживающий большего
         </h2>
         <p class="intro-text">
           Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
@@ -63,12 +62,11 @@
           </h2>
           <span>- №1 -</span>
           <p class="features-description">
-            Седона - не аттракцион для туристов,<br>
-            там течет своя жизнь
+            Седона - не аттракцион для туристов, там течет своя жизнь
           </p>
         </div>
         <div class="features-img">
-          <img src="img/sedona-buildings.jpg" width="1600" height="800" alt="домики в Седоне">
+          <img src="img/sedona-buildings.jpg" width="800" height="400" alt="домики в Седоне">
         </div>
       </section>
 
@@ -77,30 +75,27 @@
         <ul class="features-list">
           <li class="features-item">
             <h3>Жилье</h3>
-            <p>Рекомендуем пожить в настоящем<br>
-              мотеле, все как в кино!</p>
+            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           <li class="features-item">
             <h3>Еда</h3>
-            <p>Всегда заказывайте фирменный бургер,<br>
-              вы не разочаруетесь!</p>
+            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="features-item">
             <h3>Сувениры</h3>
-            <p>Не только китайского, но и местного<br>
-            производства!</p>
+            <p>Не только китайского, но и местного производства!</p>
           </li>
         </ul>
       </section>
 
       <section class="features">
         <div class="features-text">
-          <h2 class="features-title">Там есть мост дьявола</h2>
+          <h2 class="features-title">Там есть<br>
+            мост дьявола</h2>
           <span>- №2 -</span>
-          <p class="features-description">Да, по нему можно пройти! Если конечно<br>
-            вы осмелитесь</p>
+          <p class="features-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
         <div class="features-img">
-          <img src="img/devils-bridge.jpg" width="1600" height="800" alt="мост дьявола">
+          <img src="img/devils-bridge.jpg" width="800" height="332" alt="мост дьявола">
         </div>
       </section>
 
@@ -110,20 +105,17 @@
           <li class="other-item">
             <h2>Небольшая площадь</h2>
             <span>- №3 -</span>
-            <p>Все достопримечательности<br>
-            находятся очень близко</p>
+            <p>Все достопримечательности находятся очень близко</p>
           </li>
           <li class="other-item">
             <h2>Красивая дорога</h2>
             <span>- №4 -</span>
-            <p>Ехать в Седону из Лас-Вегаса совсем<br>
-            не скучно!</p>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li class="other-item">
             <h2>Мало туристов</h2>
             <span>- №5 -</span>
-            <p>Большинство едет в Гранд-Каньон и<br>
-            толпится там</p>
+            <p>Большинство едет в Гранд-Каньон и толпится там</p>
           </li>
         </ul>
       </section>
@@ -151,32 +143,35 @@
         <img src="img/map.jpg" weight="1718" height="748" alt="карта штата Аризона">
       </section>
 
-      <section class="find-hotel-form">
+      <section class="find-hotel-popup">
         <h2 class="visually-hidden">
           Форма быстрого поиска отеля
         </h2>
-        <p>
-          Дата заезда: <span>24 апреля 2016</span>
-          <!--здесь будет форма-->
-        </p>
-        <p>
-          Дата выезда: <span>4 июля 2016</span>
-          <!--Здесь будет форма-->
-        </p>
-        <p>
-          Взрослые: <span>2</span>
-          <!--Здесь будет форма-->
-        </p>
-        <p>
-          Дети: <span>0</span>
-          <!--Здесь будет форма-->
-        </p>
+        <form class="find-hotel-form" action="https://echo.htmlacademy.ru" method="get">
+          <p class="check-in">
+            <label for="check-in">Дата заезда:</label>
+            <input type="date" name="check-in" id="check-in">
+          </p>
+          <p class="check-out">
+            <label for="check-out">Дата выезда:</label>
+            <input type="date" name="check-out" id="check-out">
+          </p>
+          <p class="adults">
+            <label for="adults">Взрослые:</label>
+            <input type="number" name="adults" id="adults" min="0" value="2">
+          </p>
+          <p class="children">
+            <label for="children">Дети:</label>
+            <input type="number" name="children" id="children" min="0" value="0">
+          </p>
+          <button class="find-hotel-button" type="submit" name="find" id="find">Найти</button>
+        </form>
       </section>
     </main>
     <footer class="main-footer">
       <div class="hashtag">
-        <a>
-          <b>#VISITSEDONA</b>
+        <a href="#">
+          #VISITSEDONA
         </a>
       </div>
 
@@ -194,12 +189,12 @@
         </ul>
       </div>
 
-      <p class="copyright">
+      <div class="copyright">
         <a class="copy-link" href="https://htmlacademy.ru/intensive/htmlcss">
           <span>Website by</span>
-          <img src="img/copyright.jpg" width="120" height="30" alt="Сайт сделан HTML Academy">
+          <img src="img/logo-htmlacademy.svg" height="115" width="41" alt="Сайт сделан HTML Academy">
         </a>
-      </p>
+      </div>
     </footer>
   </body>
 </html>
