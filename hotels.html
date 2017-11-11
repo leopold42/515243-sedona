@@ -32,7 +32,7 @@
       </nav>
       <div class="logo">
         <a class="logo-link" href="index.html">
-          <img src="img/logo.png" width="138" height="70" alt="Логотип сайта Седона">
+          <img src="img/main-logo.png" width="138" height="70" alt="Логотип сайта Седона">
         </a>
       </div>
     </header>
@@ -47,15 +47,15 @@
             </p>
             <ul class="infrastructure-list">
               <li class="infrastructure-item">
-                <input type="checkbox" name="pool" id="pool" checked>
+                <input type="checkbox" name="pool" id="pool" tabindex="0" checked>
                 <label for="pool">Бассейн</label>
               </li>
               <li class="infrastructure-item">
-                <input type="checkbox" name="parking" id="parking">
+                <input type="checkbox" name="parking" id="parking" tabindex="0">
                 <label for="parking">Парковка</label>
               </li>
               <li class="infrastructure-item">
-                <input type="checkbox" name="wi-fi" id="wi-fi">
+                <input type="checkbox" name="wi-fi" id="wi-fi" tabindex="0">
                 <label for="wi-fi">Wi-Fi</label>
               </li>
             </ul>
@@ -67,15 +67,15 @@
             </p>
             <ul class="apartments-list">
               <li class="apartments-item">
-                <input type="checkbox" name="hotel" id="hotel" checked>
+                <input type="checkbox" name="hotel" id="hotel" tabindex="0" checked>
                 <label for="hotel">Гостиница</label>
               </li>
               <li class="apartments-item">
-                <input type="checkbox" name="motel" id="motel" checked>
+                <input type="checkbox" name="motel" id="motel" tabindex="0" checked>
                 <label for="motel">Мотель</label>
               </li>
               <li class="apartments-item">
-                <input type="checkbox" name="apartments" id="apartments"checked>
+                <input type="checkbox" name="apartments" id="apartments" tabindex="0" checked>
                 <label for="apartments">Апартаменты</label>
               </li>
             </ul>
@@ -108,8 +108,8 @@
           </p>
         </div>
 
-        <div>
-          <p class="result-sort">
+        <div class="result-sort">
+          <p class="title">
             сортировка:
           </p>
             <ul class="result-list">
@@ -125,10 +125,10 @@
             </ul>
             <ul class="sort-buttons-list">
               <li class="sort-button">
-                <button type="button">min - max</button>
+                <a href="#">min - max</a>
               </li>
               <li class="sort-button">
-                <button type="button">max - min</button></button>
+                <a href="#">max - min</a>
               </li>
             </ul>
           <!--кнопка сортировки найденных отелей-->
