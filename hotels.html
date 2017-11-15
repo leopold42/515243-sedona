@@ -86,9 +86,16 @@
             </div>
 
             <div class="amount">
+              <p class="title">
+                <b>Стоимость в сутки (р):</b>
+              </p>
               <div class="min-max-amount">
-                От 0 - до 3000
-                <!--сделать таблицей?-->
+                <output name="min-amount">
+                  От 0
+                </output>
+                <output name="max-amount">
+                  До 3000
+                </output>
               </div>
               <div class="left-slider">
                 <span tabindex="0">0</span>
@@ -117,7 +124,7 @@
               сортировка:
             </p>
               <ul class="result-list">
-                <li class="result-item">
+                <li class="result-item result-item-current">
                   <a class="result-link" href="#">По цене</a>
                 </li>
                 <li class="result-item">
@@ -142,7 +149,7 @@
 
         <section class="result-catalog">
           <h2 class="visually-hidden">Список найденных вариантов для проживания</h2>
-            <ul class="catalog">
+            <ul class="catalog-list">
               <li class="catalog-item">
                 <article class="hotel">
                   <h1 class="hotel-name">
@@ -157,14 +164,22 @@
                   <span class="price">
                     От 3500 р.
                   </span>
-                  <a class="more-info" href="#">Подробнее</a>
-                  <a class="book" href="#">Забронировать</a>
+                  <div class="more-info">
+                    <a href="#">Подробнее</a>
+                  </div>
+                  <div class="book">
+                    <a href="#">Забронировать</a>
+                  </div>
+                  <div class="stars-count">
+                    <img src="#" alt="звезда">
+                    <img src="#" alt="звезда">
+                    <img src="#" alt="звезда">
+                    <img src="#" alt="звезда">
+                  </div>
                   <div class="rating">
-                    <img src="#" alt="звезда">
-                    <img src="#" alt="звезда">
-                    <img src="#" alt="звезда">
-                    <img src="#" alt="звезда">
-                    <img src="#" alt="рейтинг">
+                    <p>
+                      Рейтинг: 8,5
+                    </p>
                   </div>
                 </article>
               </li>
@@ -183,12 +198,20 @@
                   <span class="price">
                     От 2000 р.
                   </span>
-                  <a class="more-info" href="#">Подробнее</a>
-                  <a class="book" href="#">Забронировать</a>
+                  <div class="more-info">
+                    <a href="#">Подробнее</a>
+                  </div>
+                  <div class="book">
+                    <a href="#">Забронировать</a>
+                  </div>
+                  <div class="stars-count">
+                    <img src="#" alt="звезда">
+                    <img src="#" alt="звезда">
+                  </div>
                   <div class="rating">
-                    <img src="#" alt="звезда">
-                    <img src="#" alt="звезда">
-                    <img src="#" alt="рейтинг">
+                    <p>
+                      Рейтинг: 8,9
+                    </p>
                   </div>
                 </article>
               </li>
@@ -207,13 +230,21 @@
                   <span class="price">
                     От 4000 р.
                   </span>
-                  <a class="more-info" href="#">Подробнее</a>
-                  <a class="book" href="#">Забронировать</a>
+                  <div class="more-info">
+                    <a href="#">Подробнее</a>
+                  </div>
+                  <div class="book">
+                    <a href="#">Забронировать</a>
+                  </div>
+                  <div class="stars-count">
+                    <img src="#" alt="звезда">
+                    <img src="#" alt="звезда">
+                    <img src="#" alt="звезда">
+                  </div>
                   <div class="rating">
-                    <img src="#" alt="звезда">
-                    <img src="#" alt="звезда">
-                    <img src="#" alt="звезда">
-                    <img src="#" alt="рейтинг">
+                    <p>
+                      Рейтинг: 9,2
+                    </p>
                   </div>
                 </article>
               </li>

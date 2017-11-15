@@ -13,6 +13,18 @@ body {
   background-color: #f2f2f2;
 }
 
+@font-face {
+ font-family: "PT Sans";
+ src: url("../fonts/ptsans.woff2") format("woff2"),
+        url("../fonts/ptsans.woff") format("woff");
+}
+
+@font-face {
+ font-family: "PT Sans";
+ src: url("../fonts/ptsansbold.woff2") format("woff2"),
+        url("../fonts/ptsansbold.woff") format("woff");
+}
+
 a {
   text-decoration: none;
 }
@@ -152,6 +164,8 @@ a {
 }
 
 .popup-button a {
+  padding: 35px 140px 33px 140px;
+
   font-size: 21px;
   font-height: 26px;
   font-weight: 700;
@@ -171,6 +185,7 @@ a {
   opacity: 0.3;
 
   background-color: #503e33;
+  opacity: 1;
 }
 
 .find-hotel-popup {
@@ -183,7 +198,9 @@ a {
 }
 
 .find-hotel-popup input {
+  padding: 14px 15px;
   background-color: #f2f2f2;
+  border: 0;
 }
 
 .find-hotel-popup input:hover {
@@ -192,17 +209,20 @@ a {
 
 .find-hotel-popup input:focus {
   background-color: #ffffff;
+  border: 2px solid #e5e5e5;
 }
 
 .find-hotel-button {
+  padding: 17px 197px 22px 195px;
+
   font-size: 21px;
   font-height: 26px;
   font-weight: 700;
+  text-transform: uppercase;
   color: #ffffff;
 
   background-color: #81b3d2;
-
-  user-select: none;
+  border: 0;
 }
 
 .find-hotel-button:hover {
@@ -218,8 +238,234 @@ a {
   background-color: #5496bd;
 }
 
+.hotel-search {
+  font-size: 14px;
+  font-height: 21px;
+  font-weight: 400;
+  color: #ffffff;
 
+  background-color: #81b3d2;
+  background-image: url("img/hotels-background.jpg");
+  background-repeat: no-repeat;
+}
+
+.infrastructure p {
+  font-size: 16px;
+  font-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.infrastructure-list {
+  list-style: none;
+}
+
+.apartments p {
+  font-size: 16px;
+  font-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.apartments-list {
+  list-style: none;
+}
+
+.amount p {
+  font-size: 16px;
+  font-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.show-hotels {
+  font-size: 14px;
+  font-height: 21px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  border: 2px solid #ffffff;
+}
+
+.show-hotels:hover {
+  font-size: 16px;
+  font-height: 21px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+
+  border: 0;
+  background-color: #ffffff;
+}
+
+.result {
+  font-size: 12px;
+  font-height: 18px;
+  font-weight: 400;
+  color: #000000;
+
+  background-color: #fefefe;
+}
+
+.result-find p {
+  font-size: 21px;
+  font-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.result-list {
+  list-style: none;
+}
+
+.result-item a {
+  font-size: 12px;
+  font-height: 18px;
+  font-weight: 400;
+  color: #000000;
+  opacity: 0.3;
+  text-decoration: dotted underline;
+}
+
+.result-item a:hover {
+  font-size: 12px;
+  font-height: 18px;
+  font-weight: 400;
+  color: #99cccc;
+  text-decoration: dotted underline;
+}
+
+.result-item a:active {
+  font-size: 12px;
+  font-height: 18px;
+  font-weight: 400;
+  color: #000000;
+  opacity: 1;
+  text-decoration: none;
+}
+
+.result-item-current a {
+    color: #99cccc;
+    opacity: 1;
+    text-decoration: none;
+}
+
+.sort-buttons-list {
+  list-style: none;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #000000;
+  text-align: left;
+
+  background-color: #ffffff;
+}
+
+.hotel-name a {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.hotel-name a:hover {
+  color: #99cccc;
+}
+
+.hotel-name a:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.more-info a {
+  width: 110px;
+  height: 27px;
+  padding: 8px 17px 7px 17px;
+
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+
+  background-color: #81b3d2;
+}
+
+.more-info a:hover {
+  background-color: #669ec0;
+}
+
+.more-info a:active {
+  opacity: 0.3;
+  background-color: #5496bd;
+}
+
+.book a {
+  width: 142px;
+  height: 27px;
+  padding: 8px 17px 9px 16px;
+
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+
+  background-color: #766357;
+}
+
+.book a:hover {
+  background-color: #604e43;
+}
+
+.book a:active {
+  opacity: 0.3;
+  background-color: #503e33;
+}
+
+.rating p {
+  width: 110px;
+  height: 27px;
+  padding: 5px 13px 7px 16px;
+
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #666666;
+
+  background-color: #f2f2f2;
+}
+
+
+
+
+
+.hashtag a {
+  color: #000000;
+}
 
 .social-list {
   list-style: none;
+}
+
+.social-button {
+  background-color: #81b3d2;
+}
+
+.social-button:hover {
+  background-color: #669ec0;
+}
+
+.social-button:active {
+  background-color: #5496bd;
+}
+
+.copyright a {
+  color: #000000;
 }
