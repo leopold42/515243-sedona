@@ -1,3 +1,19 @@
+@font-face {
+ font-family: "PT Sans";
+ font-style: normal;
+ font-weight: normal;
+ src: url("../fonts/ptsans.woff2") format("woff2"),
+        url("../fonts/ptsans.woff") format("woff");
+}
+
+@font-face {
+ font-family: "PT Sans";
+ font-style: normal;
+ font-weight: bold;
+ src: url("../fonts/ptsansbold.woff2") format("woff2"),
+        url("../fonts/ptsansbold.woff") format("woff");
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -11,18 +27,6 @@ body {
   text-transform: uppercase;
 
   background-color: #f2f2f2;
-}
-
-@font-face {
- font-family: "PT Sans";
- src: url("../fonts/ptsans.woff2") format("woff2"),
-        url("../fonts/ptsans.woff") format("woff");
-}
-
-@font-face {
- font-family: "PT Sans";
- src: url("../fonts/ptsansbold.woff2") format("woff2"),
-        url("../fonts/ptsansbold.woff") format("woff");
 }
 
 a {
@@ -51,8 +55,7 @@ a {
 }
 
 .main-nav a:active {
-  color: #000000;
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .nav-item-current a {
@@ -175,17 +178,13 @@ a {
 }
 
 .popup-button a:hover {
-  color: #ffffff;
-
   background-color: #604e43;
 }
 
 .popup-button a:active {
-  color: #ffffff;
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
 
   background-color: #503e33;
-  opacity: 1;
 }
 
 .find-hotel-popup {
@@ -232,8 +231,7 @@ a {
 }
 
 .find-hotel-button:active {
-  color: #ffffff;
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
 
   background-color: #5496bd;
 }
@@ -245,7 +243,7 @@ a {
   color: #ffffff;
 
   background-color: #81b3d2;
-  background-image: url("img/hotels-background.jpg");
+  background-image: url("../img/hotels-background.jpg");
   background-repeat: no-repeat;
 }
 
@@ -285,7 +283,9 @@ a {
   color: #ffffff;
   text-transform: uppercase;
 
+  background: transparent;
   border: 2px solid #ffffff;
+  border-radius: 1px;
 }
 
 .show-hotels:hover {
@@ -323,8 +323,7 @@ a {
   font-size: 12px;
   font-height: 18px;
   font-weight: 400;
-  color: #000000;
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
   text-decoration: dotted underline;
 }
 
@@ -341,13 +340,11 @@ a {
   font-height: 18px;
   font-weight: 400;
   color: #000000;
-  opacity: 1;
   text-decoration: none;
 }
 
 .result-item-current a {
     color: #99cccc;
-    opacity: 1;
     text-decoration: none;
 }
 
@@ -381,8 +378,7 @@ a {
 }
 
 .hotel-name a:active {
-  color: #000000;
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .more-info a {
@@ -403,7 +399,7 @@ a {
 }
 
 .more-info a:active {
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
 
@@ -425,7 +421,7 @@ a {
 }
 
 .book a:active {
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
 
