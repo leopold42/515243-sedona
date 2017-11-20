@@ -244,6 +244,7 @@ a {
 
   background-color: #81b3d2;
   background-image: url("../img/hotels.jpg");
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
