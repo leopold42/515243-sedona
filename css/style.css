@@ -33,7 +33,22 @@ a {
   text-decoration: none;
 }
 
-.main-nav {
+.body-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  …
+}
+/*-----------------------------header--------------------------*/
+
+.main-header {
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
@@ -62,9 +77,16 @@ a {
   color: #666666;
 }
 
+/*-----------------------главная страница---------------------*/
+
+.welcome {
+  margin: 0;
+  padding: 0;
+}
+
 .intro {
   font-size: 14px;
-  font-height: 26px;
+  line-height: 26px;
   font-weight: 400;
   color: #333333;
 
@@ -75,12 +97,13 @@ a {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  vertical-align: bottom;
   color: #000000;
 }
 
 .real-town {
   font-size: 14px;
-  font-height: 21px;
+  line-height: 21px;
   font-weight: 400;
   color: #ffffff;
 
@@ -89,14 +112,14 @@ a {
 
 .real-town h2 {
   font-size: 21px;
-  font-height: 21px;
+  line-height: 21px;
   font-weight: 700;
   color: #ffffff;
 }
 
 .more {
   font-size: 14px;
-  font-height: 21px;
+  line-height: 21px;
   font-weight: 400;
   color: #333333;
 
@@ -105,7 +128,7 @@ a {
 
 .more h3 {
   font-size: 21px;
-  font-height: 21px;
+  line-height: -height: 21px;
   font-weight: 700;
   color: #000000;
 }
@@ -116,7 +139,7 @@ a {
 
 .devil-bridge {
   font-size: 14px;
-  font-height: 21px;
+  line-height: 21px;
   font-weight: 400;
   color: #ffffff;
 
@@ -125,14 +148,14 @@ a {
 
 .devil-bridge h2 {
   font-size: 21px;
-  font-height: 21px;
+  line-height: 21px;
   font-weight: 700;
   color: #ffffff;
 }
 
 .other {
   font-size: 14px;
-  font-height: 21px;
+  line-height: 21px;
   font-weight: 400;
   color: #333333;
 
@@ -145,14 +168,14 @@ a {
 
 .other h2 {
   font-size: 21px;
-  font-height: 21px;
+  line-height: 21px;
   font-weight: 700;
   color: #000000;
 }
 
 .find-hotel {
   font-size: 14px;
-  font-height: 24px;
+  line-height: 24px;
   font-weight: 400;
   color: #333333;
 
@@ -161,7 +184,7 @@ a {
 
 .find-hotel b {
   font-size: 30px;
-  font-height: 36px;
+  line-height: 36px;
   font-weight: 700;
   color: #000000;
 }
@@ -170,7 +193,7 @@ a {
   padding: 35px 140px 33px 140px;
 
   font-size: 21px;
-  font-height: 26px;
+  line-height: 26px;
   font-weight: 700;
   color: #ffffff;
 
@@ -189,7 +212,7 @@ a {
 
 .find-hotel-popup {
   font-size: 14px;
-  font-height: 26px;
+  line-height: 26px;
   font-weight: 700;
   color: #000000;
 
@@ -215,7 +238,7 @@ a {
   padding: 17px 197px 22px 195px;
 
   font-size: 21px;
-  font-height: 26px;
+  line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
@@ -236,6 +259,8 @@ a {
   background-color: #5496bd;
 }
 
+/*---------------------------hotels------------------------------*/
+
 .hotel-search {
   font-size: 14px;
   line-height: 21px;
@@ -250,7 +275,7 @@ a {
 
 .infrastructure p {
   font-size: 16px;
-  font-height: 21px;
+  line-height: 21px;
   font-weight: 700;
   color: #ffffff;
 }
@@ -261,7 +286,7 @@ a {
 
 .apartments p {
   font-size: 16px;
-  font-height: 21px;
+  line-height: 21px;
   font-weight: 700;
   color: #ffffff;
 }
@@ -272,14 +297,14 @@ a {
 
 .amount p {
   font-size: 16px;
-  font-height: 21px;
+  line-height: 21px;
   font-weight: 700;
   color: #ffffff;
 }
 
 .show-hotels {
   font-size: 14px;
-  font-height: 21px;
+  line-height: 21px;
   font-weight: 400;
   color: #ffffff;
   text-transform: uppercase;
@@ -291,7 +316,7 @@ a {
 
 .show-hotels:hover {
   font-size: 16px;
-  font-height: 21px;
+  line-height: 21px;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
@@ -302,7 +327,7 @@ a {
 
 .result {
   font-size: 12px;
-  font-height: 18px;
+  line-height: 18px;
   font-weight: 400;
   color: #000000;
 
@@ -311,7 +336,7 @@ a {
 
 .result-find p {
   font-size: 21px;
-  font-height: 26px;
+  line-height: 26px;
   font-weight: 700;
   color: #000000;
 }
@@ -322,7 +347,7 @@ a {
 
 .result-item a {
   font-size: 12px;
-  font-height: 18px;
+  line-height: 18px;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.3);
   text-decoration: dotted underline;
@@ -330,7 +355,7 @@ a {
 
 .result-item a:hover {
   font-size: 12px;
-  font-height: 18px;
+  line-height: 18px;
   font-weight: 400;
   color: #99cccc;
   text-decoration: dotted underline;
@@ -338,7 +363,7 @@ a {
 
 .result-item a:active {
   font-size: 12px;
-  font-height: 18px;
+  line-height: 18px;
   font-weight: 400;
   color: #000000;
   text-decoration: none;
@@ -441,9 +466,16 @@ a {
 
 
 
-
+/*--------------------------footer------------------------------*/
+.main-footer {
+  height: 120px;
+  background-color: rgba(254, 254, 254, 0.9);
+}
 
 .hashtag a {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
   color: #000000;
 }
 
@@ -464,5 +496,137 @@ a {
 }
 
 .copyright a {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
   color: #000000;
+}
+
+/*--------------------строим сетку----------------------------------*/
+
+.header-container {
+  width: 1054px;
+  margin: auto;
+}
+
+.main-nav .nav-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  min-height: 56px;
+  align-items: center;
+}
+
+.main-nav li {
+  flex-basis: 240px;
+  /*временно для сетки*/
+  background-color: red;
+}
+
+.main-nav li:nth-child(2) {
+  margin-right: auto;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 216px;
+}
+
+.intro-title {
+  width: 450px;
+  flex-grow: 1;
+}
+
+.intro-text {
+  flex-grow: 1;
+}
+
+.real-town {
+  display: flex;
+  min-height: 256px;
+}
+
+.real-town .features-text {
+  width: 400px;
+}
+
+.real-town .features-img {
+  width: 800px;
+}
+
+
+.more .features-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 330px;
+}
+
+.more li {
+  flex-basis: 400px;
+}
+
+.devil-bridge {
+  display: flex;
+  min-height: 256px;
+}
+
+.devil-bridge .features-text {
+  width: 400px;
+}
+
+.devil-bridge .features-img {
+  width: 800px;
+}
+
+.other .other-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+  min-height: 256px;
+}
+
+.other li {
+  flex-basis: 400px;
+}
+
+.find-hotel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 291px;
+  flex-basis:
+}
+
+.find-hotel .popup-button {
+  flex-basis: 86px;
+}
+
+/*--------------------------hotels------------------------------*/
+
+
+
+/*--------------------------footer------------------------------*/
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1056px;
+  margin: auto;
+  /*временно для сетки: */
+  background-color: green;
+}
+
+.footer-container div {
+  flex-basis: 240px;
+  /*временно для сетки: */
+  background-color: red;
+}
+
+.footer-container div:nth-child(2) {
+  flex-basis: 400px;
 }

@@ -9,105 +9,109 @@
   <body>
     <div class="body-container">
       <header class="main-header">
-        <nav class="main-nav">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                Информация
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                Фото и видео
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                Карта штата
-              </a>
-            </li>
-            <li class="nav-item nav-item-current">
-              <a class="nav-link" href="hotels.html">
-                Гостиницы
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div class="logo">
-          <a class="logo-link" href="index.html">
-            <img src="img/main-logo.png" width="138" height="70" alt="Логотип сайта Седона">
-          </a>
+        <div class="header-container">
+          <nav class="main-nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Информация
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Фото и видео
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Карта штата
+                </a>
+              </li>
+              <li class="nav-item nav-item-current">
+                <a class="nav-link" href="hotels.html">
+                  Гостиницы
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="logo">
+            <a class="logo-link" href="index.html">
+              <img src="img/main-logo.png" width="138" height="70" alt="Логотип сайта Седона">
+            </a>
+          </div>
         </div>
       </header>
 
-      <main>
+      <main class="hotels-main">
         <section class="hotel-search">
-          <h1 class="visually-hidden">Поиск наиболее подходящего отеля</h1>
-          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-            <div class="infrastructure">
-              <p class="title">
-                <b>Инфраструктура:</b>
-              </p>
-              <ul class="infrastructure-list">
-                <li class="infrastructure-item">
-                  <input type="checkbox" name="pool" id="pool" checked>
-                  <label for="pool" tabindex="0">Бассейн</label>
-                </li>
-                <li class="infrastructure-item">
-                  <input type="checkbox" name="parking" id="parking">
-                  <label for="parking" tabindex="0">Парковка</label>
-                </li>
-                <li class="infrastructure-item">
-                  <input type="checkbox" name="wi-fi" id="wi-fi">
-                  <label for="wi-fi" tabindex="0">Wi-Fi</label>
-                </li>
-              </ul>
-            </div>
-
-            <div class="apartments">
-              <p class="title">
-                <b>Тип жилья:</b>
-              </p>
-              <ul class="apartments-list">
-                <li class="apartments-item">
-                  <input type="checkbox" name="hotel" id="hotel" checked>
-                  <label for="hotel" tabindex="0">Гостиница</label>
-                </li>
-                <li class="apartments-item">
-                  <input type="checkbox" name="motel" id="motel" checked>
-                  <label for="motel" tabindex="0">Мотель</label>
-                </li>
-                <li class="apartments-item">
-                  <input type="checkbox" name="apartments" id="apartments" checked>
-                  <label for="apartments" tabindex="0">Апартаменты</label>
-                </li>
-              </ul>
-            </div>
-
-            <div class="amount">
-              <p class="title">
-                <b>Стоимость в сутки (р):</b>
-              </p>
-              <div class="min-max-amount">
-                <output name="min-amount">
-                  От 0
-                </output>
-                <output name="max-amount">
-                  До 3000
-                </output>
-              </div>
-              <div class="left-slider">
-                <span tabindex="0">0</span>
-                <!--Левый интерактивынй ползунок-->
-              </div>
-              <div class="right-slider">
-                <span tabindex="0">0</span>
-                <!--Правый интерактивынй позунок-->
+          <div class="hotel-search-container">
+            <h1 class="visually-hidden">Поиск наиболее подходящего отеля</h1>
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+              <div class="infrastructure">
+                <p class="title">
+                  <b>Инфраструктура:</b>
+                </p>
+                <ul class="infrastructure-list">
+                  <li class="infrastructure-item">
+                    <input type="checkbox" name="pool" id="pool" checked>
+                    <label for="pool" tabindex="0">Бассейн</label>
+                  </li>
+                  <li class="infrastructure-item">
+                    <input type="checkbox" name="parking" id="parking">
+                    <label for="parking" tabindex="0">Парковка</label>
+                  </li>
+                  <li class="infrastructure-item">
+                    <input type="checkbox" name="wi-fi" id="wi-fi">
+                    <label for="wi-fi" tabindex="0">Wi-Fi</label>
+                  </li>
+                </ul>
               </div>
 
-              <button class="show-hotels" type="submit">Показать</button>
-            </div>
-          </form>
+              <div class="apartments">
+                <p class="title">
+                  <b>Тип жилья:</b>
+                </p>
+                <ul class="apartments-list">
+                  <li class="apartments-item">
+                    <input type="checkbox" name="hotel" id="hotel" checked>
+                    <label for="hotel" tabindex="0">Гостиница</label>
+                  </li>
+                  <li class="apartments-item">
+                    <input type="checkbox" name="motel" id="motel" checked>
+                    <label for="motel" tabindex="0">Мотель</label>
+                  </li>
+                  <li class="apartments-item">
+                    <input type="checkbox" name="apartments" id="apartments" checked>
+                    <label for="apartments" tabindex="0">Апартаменты</label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="amount">
+                <p class="title">
+                  <b>Стоимость в сутки (р):</b>
+                </p>
+                <div class="min-max-amount">
+                  <output name="min-amount">
+                    От 0
+                  </output>
+                  <output name="max-amount">
+                    До 3000
+                  </output>
+                </div>
+                <div class="left-slider">
+                  <span tabindex="0">0</span>
+                  <!--Левый интерактивынй ползунок-->
+                </div>
+                <div class="right-slider">
+                  <span tabindex="0">0</span>
+                  <!--Правый интерактивынй позунок-->
+                </div>
+
+                <button class="show-hotels" type="submit">Показать</button>
+              </div>
+            </form>
+          </div>
         </section>
 
         <section class="result">
@@ -252,32 +256,33 @@
 
       </main>
       <footer class="main-footer">
-        <div class="hashtag">
-          <a href="#">
-            #VISITSEDONA
-          </a>
-        </div>
+        <div class="footer-container">
+          <div class="hashtag">
+            <a href="#">
+              #VISITSEDONA
+            </a>
+          </div>
 
-        <div class="social">
-          <ul class="social-list">
-            <li class="social-item">
-              <a class="social-button" href="#">Твиттер</a>
-            </li>
-            <li class="social-item">
-              <a class="social-button" href="#">Фейсбук</a>
-            </li>
-            <li class="social-item">
-              <a class="social-button" href="#">Ютуб</a>
-            </li>
-          </ul>
-        </div>
+          <div class="social">
+            <ul class="social-list">
+              <li class="social-item">
+                <a class="social-button" href="#">Твиттер</a>
+              </li>
+              <li class="social-item">
+                <a class="social-button" href="#">Фейсбук</a>
+              </li>
+              <li class="social-item">
+                <a class="social-button" href="#">Ютуб</a>
+              </li>
+            </ul>
+          </div>
 
-
-        <div class="copyright">
-          <a class="copy-link" href="https://htmlacademy.ru/intensive/htmlcss">
-            <span>Website by</span>
-            <img src="img/logo-htmlacademy.svg" height="115" width="41" alt="Сайт сделан HTML Academy">
-          </a>
+          <div class="copyright">
+            <a class="copy-link" href="https://htmlacademy.ru/intensive/htmlcss">
+              <span>Website by</span>
+              <img src="img/logo-htmlacademy.svg" height="115" width="41" alt="Сайт сделан HTML Academy">
+            </a>
+          </div>
         </div>
       </footer>
     </div>

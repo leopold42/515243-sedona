@@ -9,37 +9,40 @@
   <body>
     <div class="body-container">
       <header class="main-header">
-        <nav class="main-nav">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                Информация
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                Фото и видео
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                Карта штата
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="hotels.html">
-                Гостиницы
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <div class="header-container">
+          <nav class="main-nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Информация
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Фото и видео
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Карта штата
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hotels.html">
+                  Гостиницы
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
         <div class="logo">
           <a class="logo-link">
             <img src="img/main-logo.png" width="138" height="70" alt="Логотип сайта Седона">
           </a>
         </div>
       </header>
-      <main class="container">
+      
+      <main class="index-main">
 
         <h1 class="visually-hidden">
           Сайт маленького городка Седона
@@ -91,14 +94,14 @@
         </section>
 
         <section class="features devil-bridge">
+          <div class="features-img">
+            <img src="img/devils-bridge.jpg" width="800" height="332" alt="мост дьявола">
+          </div>
           <div class="features-text">
             <h2 class="features-title">Там есть<br>
               мост дьявола</h2>
             <span>- №2 -</span>
             <p class="features-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-          </div>
-          <div class="features-img">
-            <img src="img/devils-bridge.jpg" width="800" height="332" alt="мост дьявола">
           </div>
         </section>
 
@@ -127,14 +130,14 @@
           <h2 class="visually-hidden">
             Поможем выбрать отель
           </h2>
-          <p>
+          <p class="find-hotel-item">
             <b>Заинтересовались?</b>
           </p>
-          <p>
+          <p class="find-hotel-item">
             Укажите предполагаемые даты поездки,<br>
             и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
-          <div class="popup-button">
+          <div class="popup-button find-hotel-item">
             <a class="find-hotel-link" href="#">
               Поиск гостиницы в Седоне
             </a>
@@ -145,7 +148,7 @@
           <h2 class="visually-hidden">
             Карта штата
           </h2>
-          <img src="img/map.jpg" width="1718" height="748" alt="карта штата Аризона">
+          <img src="img/map.jpg" width="1200px" alt="карта штата Аризона">
         </section>
 
         <section class="find-hotel-popup">
@@ -174,31 +177,33 @@
         </section>
       </main>
       <footer class="main-footer">
-        <div class="hashtag">
-          <a href="#">
-            #VISITSEDONA
-          </a>
-        </div>
+        <div class="footer-container">
+          <div class="hashtag">
+            <a href="#">
+              #VISITSEDONA
+            </a>
+          </div>
 
-        <div class="social">
-          <ul class="social-list">
-            <li class="social-item">
-              <a class="social-button" href="#">Твиттер</a>
-            </li>
-            <li class="social-item">
-              <a class="social-button" href="#">Фейсбук</a>
-            </li>
-            <li class="social-item">
-              <a class="social-button" href="#">Ютуб</a>
-            </li>
-          </ul>
-        </div>
+          <div class="social">
+            <ul class="social-list">
+              <li class="social-item">
+                <a class="social-button" href="#">Твиттер</a>
+              </li>
+              <li class="social-item">
+                <a class="social-button" href="#">Фейсбук</a>
+              </li>
+              <li class="social-item">
+                <a class="social-button" href="#">Ютуб</a>
+              </li>
+            </ul>
+          </div>
 
-        <div class="copyright">
-          <a class="copy-link" href="https://htmlacademy.ru/intensive/htmlcss">
-            <span>Website by</span>
-            <img src="img/logo-htmlacademy.svg" height="115" width="41" alt="Сайт сделан HTML Academy">
-          </a>
+          <div class="copyright">
+            <a class="copy-link" href="https://htmlacademy.ru/intensive/htmlcss">
+              <span>Website by</span>
+              <img src="img/logo-htmlacademy.svg" height="115" width="41" alt="Сайт сделан HTML Academy">
+            </a>
+          </div>
         </div>
       </footer>
     </div>
