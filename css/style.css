@@ -504,7 +504,10 @@ a {
 
 /*--------------------строим сетку----------------------------------*/
 
+
+
 .header-container {
+  position: relative;
   width: 1054px;
   margin: auto;
 }
@@ -519,12 +522,22 @@ a {
 
 .main-nav li {
   flex-basis: 240px;
-  /*временно для сетки*/
-  background-color: red;
+  /*временно для сетки: */
+  background-color: rgba(255, 0, 0, 0.3);
 }
 
 .main-nav li:nth-child(2) {
   margin-right: auto;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 459px;
+}
+
+.welcome {
+  line-height: 0;
 }
 
 .intro {
@@ -556,6 +569,9 @@ a {
   width: 800px;
 }
 
+.features-img {
+  line-height: 0;
+}
 
 .more .features-list {
   margin: 0;
@@ -594,19 +610,94 @@ a {
 }
 
 .find-hotel {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   min-height: 291px;
-  flex-basis:
+  padding-top: 55px;
+}
+
+.find-hotel p:first-child {
+  margin-bottom: 30px;
+}
+
+.find-hotel p:nth-child(2) {
+  margin-bottom: 49px;
 }
 
 .find-hotel .popup-button {
-  flex-basis: 86px;
+  position: relative;
+  top: 35px;
+  margin-top: 49px;
 }
 
 /*--------------------------hotels------------------------------*/
 
+
+.hotel-search-container {
+  width: 1056px;
+  margin: auto;
+  /*временно для сетки: */
+  background-color: rgba(28, 194, 30, 0.3);
+}
+
+.search-form {
+  display: flex;
+}
+
+.amount {
+  margin-left: auto;
+}
+
+.result-catalog {
+  width: 100%;
+  background-color: #fefefe;
+}
+
+.result {
+  display: flex;
+}
+
+.result-container {
+  width: 1056px;
+  margin: auto;
+  /*временно для сетки: */
+  background-color: rgba(28, 194, 30, 0.3);
+}
+
+.result-catalog .catalog-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.result-catalog li {
+  border-top: 1px solid #e5e5e5;
+}
+
+.result-catalog li:last-child {
+   border-bottom: 1px solid #e5e5e5;
+}
+
+.hotel-container {
+  width: 1056px;
+  margin: auto;
+  /*временно для сетки: */
+  background-color: rgba(28, 194, 30, 0.3);
+}
+
+.catalog-item {
+  display: flex;
+}
+
+.hotel {
+  display: flex;
+}
+
+.hotel .hotel-column:last-child {
+  margin-left: auto;
+}
+
+.hotel .hotel-photo {
+  order: -1;
+}
 
 
 /*--------------------------footer------------------------------*/
@@ -618,13 +709,13 @@ a {
   width: 1056px;
   margin: auto;
   /*временно для сетки: */
-  background-color: green;
+  background-color: rgba(28, 194, 30, 0.3);
 }
 
 .footer-container div {
   flex-basis: 240px;
   /*временно для сетки: */
-  background-color: red;
+  background-color: rgba(255, 0, 0, 0.3);
 }
 
 .footer-container div:nth-child(2) {
