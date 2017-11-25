@@ -102,8 +102,8 @@ a {
 }
 
 .real-town {
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 10px;
+  line-height: 17px;
   font-weight: 400;
   color: #ffffff;
 
@@ -111,8 +111,8 @@ a {
 }
 
 .real-town h2 {
-  font-size: 21px;
-  line-height: 21px;
+  font-size: 15px;
+  line-height: 15px;
   font-weight: 700;
   color: #ffffff;
 }
@@ -506,34 +506,38 @@ a {
 
 
 
-.header-container {
-  position: relative;
-  width: 1054px;
-  margin: auto;
-}
-
 .main-nav .nav-list {
   display: flex;
   margin: 0;
   padding: 0;
-  min-height: 56px;
   align-items: center;
 }
 
 .main-nav li {
   flex-basis: 240px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   /*временно для сетки: */
   background-color: rgba(255, 0, 0, 0.3);
 }
 
+.main-nav li:first-child {
+  padding-left: 72px;
+}
+
+.main-nav li:last-child {
+  padding-right: 72px;
+}
+
 .main-nav li:nth-child(2) {
-  margin-right: auto;
+  margin-right: 240px;
 }
 
 .logo {
   position: absolute;
   top: 0;
-  left: 459px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .welcome {
@@ -541,43 +545,62 @@ a {
 }
 
 .intro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 216px;
+  padding-top: 62px;
+  padding-bottom: 46px;
 }
 
-.intro-title {
+.intro h2 {
   width: 450px;
-  flex-grow: 1;
+  margin: auto;
+  margin-bottom: 32px;
 }
 
-.intro-text {
-  flex-grow: 1;
+.intro p {
+  margin: auto;
 }
 
 .real-town {
   display: flex;
-  min-height: 256px;
 }
 
 .real-town .features-text {
   width: 400px;
+  padding-top: 50px;
+  padding-bottom: 60px;
 }
 
 .real-town .features-img {
   width: 800px;
 }
 
+.features-img img {
+  max-width: 100%;
+}
+
 .features-img {
   line-height: 0;
+}
+
+.real-town h2 {
+  width: 124px;
+  margin: auto;
+  margin-bottom: 28px;
+}
+
+.real-town span {
+  display: inline-block;
+  margin-bottom: 28px;
+}
+
+.real-town p {
+  width: 282px;
+  margin: auto;
 }
 
 .more .features-list {
   margin: 0;
   padding: 0;
   display: flex;
-  min-height: 330px;
 }
 
 .more li {
@@ -586,31 +609,50 @@ a {
 
 .devil-bridge {
   display: flex;
-  min-height: 256px;
 }
 
 .devil-bridge .features-text {
   width: 400px;
+  padding-top: 50px;
+  padding-bottom: 60px;
 }
 
 .devil-bridge .features-img {
   width: 800px;
 }
 
+.devil-bridge h2 {
+  margin: auto;
+  margin-bottom: 28px;
+}
+
+.devil-bridge span {
+  display: inline-block;
+  margin-bottom: 28px;
+}
+
+.devil-bridge p {
+  width: 304px;
+  margin: auto;
+}
+
 .other .other-list {
   margin: 0;
   padding: 0;
   display: flex;
-
-  min-height: 256px;
 }
 
 .other li {
   flex-basis: 400px;
 }
 
+.other-list li {
+
+}
+
+.other-item h2 {}
+
 .find-hotel {
-  min-height: 291px;
   padding-top: 55px;
 }
 
