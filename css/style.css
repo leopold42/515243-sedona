@@ -36,6 +36,7 @@ a {
 .body-container {
   width: 1200px;
   margin: 0 auto;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
 }
 
 .visually-hidden {
@@ -464,7 +465,6 @@ a {
 
 /*--------------------------footer------------------------------*/
 .main-footer {
-  height: 120px;
   background-color: rgba(254, 254, 254, 0.9);
 }
 
@@ -511,6 +511,7 @@ a {
 
 .main-nav li {
   flex-basis: 240px;
+  box-sizing: border-box;
   padding-top: 15px;
   padding-bottom: 15px;
   /*временно для сетки: */
@@ -594,9 +595,6 @@ a {
 }
 
 
-
-
-
 /* вариант с флексом
 
 .real-town {
@@ -623,14 +621,7 @@ a {
 .features-img {
   line-height: 0;
 }
-
 */
-
-
-
-
-
-
 
 .more .features-list {
   margin: 0;
@@ -640,7 +631,68 @@ a {
 
 .more li {
   flex-basis: 400px;
+  padding-bottom: 83px;
 }
+
+.more h3 {
+  margin: auto;
+  margin-bottom: 23px;
+}
+
+.more p {
+  width: 287px;
+  margin: auto;
+}
+
+.more li:first-child {
+  padding-top: 60px;
+}
+
+.more li:nth-child(2) {
+  padding-top: 61px;
+}
+
+.more li:last-child {
+  padding-top: 56px;
+}
+
+.more li:first-child::before {
+  content: "";
+  display: block;
+  width: 75px;
+  height: 72px;
+  background: url("../img/icon-home.svg") no-repeat;
+  margin-bottom: 29px;
+}
+
+.more li:nth-child(2)::before {
+  content: "";
+  display: block;
+  width: 74px;
+  height: 70px;
+  background: url("../img/icon-burger.svg") no-repeat;
+  margin-bottom: 30px;
+}
+
+.more li:last-child::before {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 76px;
+  background: url("../img/icon-gift.svg") no-repeat;
+  margin-bottom: 29px;
+}
+
+
+
+.features-list {
+  display: flex;
+  align-items: center;
+}
+
+
+
+
 
 .devil-bridge {
   display: flex;
@@ -699,9 +751,6 @@ a {
   margin: auto;
 }
 
-
-
-
 .find-hotel {
   padding-top: 50px;
   padding-bottom: 0;
@@ -715,6 +764,22 @@ a {
 .find-hotel-text {
   margin: auto;
   margin-bottom: 47px;
+}
+
+.map {
+  width: 100%;
+  height: 473px;
+
+  background-color: #cbdda9;
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  background-position: -250px -150px;
+}
+
+.find-hotel-popup {
+  position: absolute;
+  top: 2200px;
+  left: 800px;
 }
 
 .find-hotel .popup-button a {
@@ -796,22 +861,67 @@ a {
 
 /*--------------------------footer------------------------------*/
 
-.footer-container {
+.main-footer {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 1056px;
-  margin: auto;
-  /*временно для сетки: */
-  background-color: rgba(28, 194, 30, 0.3);
+  position: relative;
+  bottom: 120px;
 }
 
-.footer-container div {
-  flex-basis: 240px;
+.main-footer div {
+  flex-basis: 400px;
+  margin: auto;
   /*временно для сетки: */
   background-color: rgba(255, 0, 0, 0.3);
 }
 
-.footer-container div:nth-child(2) {
-  flex-basis: 400px;
+.social-list {
+  display: flex;
+  width: 150px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 36px auto;
+  padding: 0;
+
+  list-style: none;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
+
+  background-color: #81b3d2;
+}
+
+.social-button:focus path {
+  fill: rgba(136, 182, 209, 0.3);
+}
+
+.copy-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copy-link span {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.copy-link span:hover {
+  visibility: hidden;
+}
+
+.copy-link span:active {
+  visibility: hidden;
+}
+
+.copy-link:hover path {
+  fill: #81b3d2;
+}
+
+.copy-link:active path {
+  fill: #bdbbbc;
 }
