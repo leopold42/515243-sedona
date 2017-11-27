@@ -246,13 +246,11 @@ a {
 
 .find-hotel-button:hover {
   color: #ffffff;
-
   background-color: #669ec0;
 }
 
 .find-hotel-button:active {
   color: rgba(255, 255, 255, 0.3);
-
   background-color: #5496bd;
 }
 
@@ -512,18 +510,18 @@ a {
 .main-nav li {
   flex-basis: 240px;
   box-sizing: border-box;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  /*временно для сетки: */
-  background-color: rgba(255, 0, 0, 0.3);
+  padding-top: 14px;
+  padding-bottom: 16px;
 }
 
 .main-nav li:first-child {
   padding-left: 72px;
+  text-align: left;
 }
 
 .main-nav li:last-child {
   padding-right: 72px;
+  text-align: right;
 }
 
 .main-nav li:nth-child(2) {
@@ -543,7 +541,7 @@ a {
 
 .intro {
   padding-top: 59px;
-  padding-bottom: 44px;
+  padding-bottom: 52px;
 }
 
 .intro h2 {
@@ -594,35 +592,6 @@ a {
   margin: auto;
 }
 
-
-/* вариант с флексом
-
-.real-town {
-  display: flex;
-  width: 1200px;
-  margin: 0 auto;
-  align-items: center;
-  flex-shrink: 0;
-}
-
-.real-town .features-text {
-  width: 400px;
-  padding: 0 60px;
-}
-
-.real-town .features-img {
-  width: 800px;
-}
-
-.features-img img {
-  max-width: 100%;
-}
-
-.features-img {
-  line-height: 0;
-}
-*/
-
 .more .features-list {
   margin: 0;
   padding: 0;
@@ -661,6 +630,7 @@ a {
   display: block;
   width: 75px;
   height: 72px;
+  margin: 0 auto;
   background: url("../img/icon-home.svg") no-repeat;
   margin-bottom: 29px;
 }
@@ -670,6 +640,7 @@ a {
   display: block;
   width: 74px;
   height: 70px;
+  margin: 0 auto;
   background: url("../img/icon-burger.svg") no-repeat;
   margin-bottom: 30px;
 }
@@ -679,6 +650,7 @@ a {
   display: block;
   width: 64px;
   height: 76px;
+  margin: 0 auto;
   background: url("../img/icon-gift.svg") no-repeat;
   margin-bottom: 29px;
 }
@@ -767,8 +739,10 @@ a {
 }
 
 .map {
+  position: relative;
   width: 100%;
   height: 593px;
+  z-index: 1;
 
   background-color: #cbdda9;
   background-image: url("../img/map.jpg");
@@ -778,8 +752,9 @@ a {
 
 .find-hotel-popup {
   position: absolute;
-  top: 2200px;
-  left: 800px;
+  width: 568px;
+  top: 0;
+  left: 316px;
 }
 
 .find-hotel .popup-button a {
@@ -863,15 +838,22 @@ a {
 
 .main-footer {
   display: flex;
-  position: relative;
-  bottom: 120px;
+  margin-top: -120px;
+  z-index: 2;
 }
 
 .main-footer div {
   flex-basis: 400px;
   margin: auto;
-  /*временно для сетки: */
-  background-color: rgba(255, 0, 0, 0.3);
+}
+
+.hotels-footer {
+  display: flex;
+}
+
+.hotels-footer div {
+  flex-basis: 400px;
+  margin: auto;
 }
 
 .social-list {
