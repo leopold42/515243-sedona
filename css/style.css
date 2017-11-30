@@ -782,6 +782,35 @@ a {
   justify-content: space-between;
   width: 100%;
   margin-bottom: 29px;
+  position: relative;
+}
+
+.btn-calendar {
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 0;
+  position: absolute;
+  right: 0;
+  background-color: transparent;
+}
+
+.btn-calendar::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 21px;
+  height: 22px;
+  background: url("../img/calendar.svg") no-repeat;
+}
+
+.btn-calendar:hover::before {
+  background: url("../img/calendar-hover.svg") no-repeat;
+}
+
+.btn-calendar:active::before {
+  background: url("../img/calendar-active.svg") no-repeat;
 }
 
 .check-in label {
@@ -791,6 +820,10 @@ a {
 .check-in input {
   box-sizing: border-box;
   width: 346px;
+  height: 38px;
+  padding: 6px 41px 6px 13px;
+  font-size: 14px;
+  line-height: 26px;
 }
 
 .find-hotel-form .check-out {
@@ -798,6 +831,7 @@ a {
   justify-content: space-between;
   width: 100%;
   margin-bottom: 30px;
+  position: relative;
 }
 
 .check-out label {
@@ -807,6 +841,10 @@ a {
 .check-out input {
   box-sizing: border-box;
   width: 346px;
+  height: 38px;
+  padding: 6px 41px 6px 13px;
+  font-size: 14px;
+  line-height: 26px;
 }
 
 .find-hotel-form .wrapper {
@@ -816,6 +854,7 @@ a {
 }
 
 .find-hotel-form .adults {
+  position: relative;
   display: flex;
   justify-content: space-between;
   width: 226px;
@@ -826,9 +865,12 @@ a {
 }
 
 .adults input {
-  display: inline-block;
   box-sizing: border-box;
   width: 114px;
+  height: 38px;
+  padding: 6px 41px 6px 54px;
+  font-size: 14px;
+  line-height: 26px;
 }
 
 .find-hotel-form .children {
@@ -844,6 +886,10 @@ a {
 .children input {
   box-sizing: border-box;
   width: 114px;
+  height: 38px;
+  padding: 6px 41px 6px 54px;
+  font-size: 14px;
+  line-height: 26px;
 }
 
 .find-hotel-button {
