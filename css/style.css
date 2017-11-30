@@ -36,7 +36,7 @@ a {
 .body-container {
   width: 1200px;
   margin: 0 auto;
-  box-shadow: 0 0 40px 2px #dbdbdb;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
 }
 
 .visually-hidden {
@@ -228,8 +228,7 @@ a {
   background-color: #ebebeb;
 }
 
-.find-hotel-form input:focus {
-  padding: 12px 13px;
+.find-hotelformp input:focus {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
 }
@@ -740,12 +739,6 @@ a {
   margin-bottom: 47px;
 }
 
-.find-hotel .popup-button a {
-  display: inline-block;
-  padding: 30px 140px 30px 140px;
-}
-
-
 .map {
   position: relative;
   width: 100%;
@@ -759,7 +752,6 @@ a {
 
 .find-hotel-form {
   position: absolute;
-  padding: 55px 0;
   width: 568px;
   top: 0;
   left: 316px;
@@ -991,40 +983,22 @@ a {
   padding: 0;
 }
 
-
-
-.sort-button {
-  position: relative;
+.sort-button a {
   display: inline-block;
   width: 17px;
   height: 11px;
 }
 
-.up-button::before {
-  content: "";
-
-  position: absolute;
-
-  top: 1px;
-
-  width: 11px;
-  height: 10px;
+.sort-button:first-child {
   background-image: url("../img/icon-up-dir.svg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: left 1px;
 }
 
-.down-button::before {
-  content: "";
-
-  position: absolute;
-  left: 6px;
-
-  width: 11px;
-  height: 10px;
+.sort-button:last-child {
   background-image: url("../img/icon-down-dir.svg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: right top;
 }
 
 
