@@ -33,10 +33,15 @@ a {
   text-decoration: none;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 .body-container {
   width: 1200px;
   margin: 0 auto;
-  box-shadow: 0 0 40px 2px #dbdbdb;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
 }
 
 .visually-hidden {
@@ -219,7 +224,6 @@ a {
 }
 
 .find-hotel-form input {
-  padding: 14px 15px;
   background-color: #f2f2f2;
   border: 0;
 }
@@ -229,7 +233,6 @@ a {
 }
 
 .find-hotel-form input:focus {
-  padding: 12px 13px;
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
 }
@@ -404,7 +407,7 @@ a {
 }
 
 .more-info a {
-  padding: 3px 17px;
+  padding: 4px 17px;
 
   font-size: 14px;
   line-height: 21px;
@@ -424,7 +427,7 @@ a {
 }
 
 .book a {
-  padding: 3px 17px;
+  padding: 4px 17px;
 
   font-size: 14px;
   line-height: 21px;
@@ -763,6 +766,8 @@ a {
   width: 568px;
   top: 0;
   left: 316px;
+  box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.15);
+
 }
 
 .find-hotel-wrapper {
@@ -860,6 +865,45 @@ a {
   width: 226px;
 }
 
+.adults .btn {
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  position: absolute;
+}
+
+.adults .btn::before , .adults .btn::after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 13px;
+  width: 11px;
+  height: 3px;
+  background-color: #a9a9a9;
+}
+
+.adults .btn-plus::after {
+  transform: rotate(90deg);
+}
+
+.adults .btn:hover::before , .adults .btn:hover::after {
+  background-color: #000000;
+}
+
+.adults .btn:active::before , .adults .btn:active::after {
+  background-color: #81b3d2;
+}
+
+.adults .btn-minus {
+  right: 76px;
+}
+
+.adults .btn-plus {
+  right: 0;
+}
+
 .adults label {
   align-self: center;
 }
@@ -877,6 +921,46 @@ a {
   display: flex;
   justify-content: space-between;
   width: 179px;
+  position: relative;
+}
+
+.children .btn {
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  position: absolute;
+}
+
+.children .btn::before , .children .btn::after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 13px;
+  width: 11px;
+  height: 3px;
+  background-color: #a9a9a9;
+}
+
+.children .btn-plus::after {
+  transform: rotate(90deg);
+}
+
+.children .btn:hover::before , .children .btn:hover::after {
+  background-color: #000000;
+}
+
+.children .btn:active::before , .children .btn:active::after {
+  background-color: #81b3d2;
+}
+
+.children .btn-minus {
+  right: 76px;
+}
+
+.children .btn-plus {
+  right: 0;
 }
 
 .children label {
@@ -1008,14 +1092,23 @@ a {
   content: "";
 
   position: absolute;
-
   top: 1px;
 
   width: 11px;
   height: 10px;
-  background-image: url("../img/icon-up-dir.svg");
+  background-image: url("../img/up-dir.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.up-button:hover::before {
+  background-image: url("../img/up-dir-hover.svg");
+
+}
+
+.up-button:active::before {
+  background-image: url("../img/up-dir-active.svg");
+
 }
 
 .down-button::before {
@@ -1026,11 +1119,20 @@ a {
 
   width: 11px;
   height: 10px;
-  background-image: url("../img/icon-down-dir.svg");
+  background-image: url("../img/down-dir-active.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
+.down-button:hover::before {
+  background-image: url("../img/down-dir-hover.svg");
+
+}
+
+.down-button:active::before {
+  background-image: url("../img/down-dir-active.svg");
+
+}
 
 
 
@@ -1120,12 +1222,33 @@ a {
   padding: 30px 0;
 }
 
-.hotel .stars-count {
-  width: 111px;
-  height: 17px;
-  margin-bottom: 47px;
+.hotel-photo img {
+  display: block;
 }
 
+.hotel-photo a {
+  margin: 0;
+  padding: 0;
+}
+
+.hotel-rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 91px;
+}
+
+.hotel-rating .stars-count {
+  display: flex;
+}
+
+.stars-count svg:first-of-type {
+  margin-left: auto;
+}
+
+.stars-count svg:not(:last-of-type) {
+  padding-right: 6px;
+}
 
 /*--------------------------footer------------------------------*/
 
@@ -1183,14 +1306,6 @@ a {
 .copy-link span {
   display: inline-block;
   margin-right: 8px;
-}
-
-.copy-link span:hover {
-  visibility: hidden;
-}
-
-.copy-link span:active {
-  visibility: hidden;
 }
 
 .copy-link:hover path {
