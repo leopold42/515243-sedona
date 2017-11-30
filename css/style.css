@@ -36,7 +36,7 @@ a {
 .body-container {
   width: 1200px;
   margin: 0 auto;
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 40px 2px #dbdbdb;
 }
 
 .visually-hidden {
@@ -228,7 +228,8 @@ a {
   background-color: #ebebeb;
 }
 
-.find-hotelformp input:focus {
+.find-hotel-form input:focus {
+  padding: 12px 13px;
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
 }
@@ -739,6 +740,12 @@ a {
   margin-bottom: 47px;
 }
 
+.find-hotel .popup-button a {
+  display: inline-block;
+  padding: 30px 140px 30px 140px;
+}
+
+
 .map {
   position: relative;
   width: 100%;
@@ -752,6 +759,7 @@ a {
 
 .find-hotel-form {
   position: absolute;
+  padding: 55px 0;
   width: 568px;
   top: 0;
   left: 316px;
@@ -807,63 +815,21 @@ a {
   margin-bottom: 54px;
 }
 
-
-
-
 .find-hotel-form .adults {
   display: flex;
   justify-content: space-between;
   width: 226px;
 }
 
-/*
-.btn {
-  font-size: 0;
-  border: none;
-  border-radius: 0;
-  padding: 20px 19px 18px 19px;
-  background-color: tomato;
-  position: absolute;
-}
-
-.btn--minus {
-}
-
-.btn--plus {
-}*/
-
-
-/*
-.btn::before , .btn::after {
-  content: '';
-  position: absolute;
-  top: 18px;
-  left: 7px;
-  width: 11px;
-  height: 3px;
-  background-color: gold;
-}
-
-.btn--plus::after {
-  transform: rotate(90deg);
-}
-
-.btn:hover::before , .btn:hover::after {
-  background-color: orange;
-}*/
-
 .adults label {
   align-self: center;
 }
 
-.adults-wrapper input {
+.adults input {
+  display: inline-block;
   box-sizing: border-box;
   width: 114px;
 }
-
-
-
-
 
 .find-hotel-form .children {
   display: flex;
@@ -983,22 +949,40 @@ a {
   padding: 0;
 }
 
-.sort-button a {
+
+
+.sort-button {
+  position: relative;
   display: inline-block;
   width: 17px;
   height: 11px;
 }
 
-.sort-button:first-child {
+.up-button::before {
+  content: "";
+
+  position: absolute;
+
+  top: 1px;
+
+  width: 11px;
+  height: 10px;
   background-image: url("../img/icon-up-dir.svg");
   background-repeat: no-repeat;
-  background-position: left 1px;
+  background-position: 0 0;
 }
 
-.sort-button:last-child {
+.down-button::before {
+  content: "";
+
+  position: absolute;
+  left: 6px;
+
+  width: 11px;
+  height: 10px;
   background-image: url("../img/icon-down-dir.svg");
   background-repeat: no-repeat;
-  background-position: right top;
+  background-position: 0 0;
 }
 
 
