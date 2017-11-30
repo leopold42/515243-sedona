@@ -815,21 +815,63 @@ a {
   margin-bottom: 54px;
 }
 
+
+
+
 .find-hotel-form .adults {
   display: flex;
   justify-content: space-between;
   width: 226px;
 }
 
+/*
+.btn {
+  font-size: 0;
+  border: none;
+  border-radius: 0;
+  padding: 20px 19px 18px 19px;
+  background-color: tomato;
+  position: absolute;
+}
+
+.btn--minus {
+}
+
+.btn--plus {
+}*/
+
+
+/*
+.btn::before , .btn::after {
+  content: '';
+  position: absolute;
+  top: 18px;
+  left: 7px;
+  width: 11px;
+  height: 3px;
+  background-color: gold;
+}
+
+.btn--plus::after {
+  transform: rotate(90deg);
+}
+
+.btn:hover::before , .btn:hover::after {
+  background-color: orange;
+}*/
+
 .adults label {
   align-self: center;
 }
 
-.adults input {
-  display: inline-block;
+.adults-wrapper input {
   box-sizing: border-box;
   width: 114px;
 }
+
+
+
+
 
 .find-hotel-form .children {
   display: flex;
