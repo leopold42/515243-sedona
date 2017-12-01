@@ -294,16 +294,19 @@ img {
   list-style: none;
 }
 
+/*
+
 .amount p {
   font-size: 16px;
-  line-height: 21px;
+  line-height: 20px;
   font-weight: 700;
   color: #ffffff;
 }
 
 .show-hotels {
+  padding: 6px 34px 6px 34px;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 20px;
   font-weight: 400;
   color: #ffffff;
   text-transform: uppercase;
@@ -314,15 +317,18 @@ img {
 }
 
 .show-hotels:hover {
-  font-size: 16px;
+  padding: 8px 36px 8px 36px;
+  font-size: 14px;
   line-height: 21px;
-  font-weight: 700;
+  font-weight: 400;
   color: #000000;
   text-transform: uppercase;
 
   border: 0;
   background-color: #ffffff;
 }
+
+*/
 
 .result {
   font-size: 12px;
@@ -991,29 +997,410 @@ img {
 .hotel-search-container {
   width: 1056px;
   margin: auto;
-  /*временно для сетки: */
-  background-color: rgba(28, 194, 30, 0.3);
+  padding-top: 11px;
+  padding-bottom: 31px;
 }
 
 .search-form {
   display: flex;
+  margin: 0;
 }
 
 .infrastructure {
-  margin-right: 115px;
+  margin-right: 119px;
+}
+
+.infrastructure .title {
+  margin-bottom: 25px;
 }
 
 .infrastructure ul {
+  margin: 0;
   padding: 0;
+}
+
+.infrastructure-item .pool {
+  display: inline-block;
+  position: relative;
+
+  margin-bottom: 25px;
+  padding-left: 40px;
+
+  cursor: pointer;
+}
+
+.pool input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  left: 0;
+
+  width: 26px;
+  height: 23px;
+
+  background-color: red;
+  background: url("../img/checkbox-off.svg") no-repeat;
+}
+
+.pool input[type="checkbox"]:checked + .checkbox-indicator {
+  background: url("../img/checkbox-on.svg") no-repeat;
+}
+
+.pool input[type="checkbox"]:disabled + .checkbox-indicator {
+  background: url("../img/checkbox-off-disabled.svg") no-repeat;
+}
+
+.pool input[type="checkbox"]:disabled:checked + .checkbox-indicator {
+  background: url("../img/checkbox-on-disabled.svg") no-repeat;
+}
+
+.pool input[type="checkbox"]:focus + .checkbox-indicator {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.infrastructure-item .parking {
+  display: inline-block;
+  position: relative;
+
+  margin-bottom: 25px;
+  padding-left: 40px;
+
+  cursor: pointer;
+}
+
+.parking input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  left: 0;
+
+  width: 26px;
+  height: 23px;
+
+  background-color: red;
+  background: url("../img/checkbox-off.svg") no-repeat;
+}
+
+.parking input[type="checkbox"]:checked + .checkbox-indicator {
+  background: url("../img/checkbox-on.svg") no-repeat;
+}
+
+.parking input[type="checkbox"]:disabled + .checkbox-indicator {
+  background: url("../img/checkbox-off-disabled.svg") no-repeat;
+}
+
+.parking input[type="checkbox"]:disabled:checked + .checkbox-indicator {
+  background: url("../img/checkbox-on-disabled.svg") no-repeat;
+}
+
+.parking input[type="checkbox"]:focus + .checkbox-indicator {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.infrastructure-item .wi-fi {
+  display: inline-block;
+  position: relative;
+
+  padding-left: 40px;
+
+  cursor: pointer;
+}
+
+.wi-fi input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  left: 0;
+
+  width: 26px;
+  height: 23px;
+
+  background-color: red;
+  background: url("../img/checkbox-off.svg") no-repeat;
+}
+
+.wi-fi input[type="checkbox"]:checked + .checkbox-indicator {
+  background: url("../img/checkbox-on.svg") no-repeat;
+}
+
+.wi-fi input[type="checkbox"]:disabled + .checkbox-indicator {
+  background: url("../img/checkbox-off-disabled.svg") no-repeat;
+}
+
+.wi-fi input[type="checkbox"]:disabled:checked + .checkbox-indicator {
+  background: url("../img/checkbox-on-disabled.svg") no-repeat;
+}
+
+.wi-fi input[type="checkbox"]:focus + .checkbox-indicator {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.apartments .title {
+  margin-bottom: 25px;
 }
 
 .apartments ul {
+  margin: 0;
   padding: 0;
 }
 
-.amount {
-  margin-left: auto;
+.apartments .item-hotel {
+  display: inline-block;
+  position: relative;
+
+  margin-bottom: 25px;
+  padding-left: 40px;
+
+  cursor: pointer;
 }
+
+.item-hotel input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  left: 0;
+
+  width: 26px;
+  height: 23px;
+
+  background-color: red;
+  background: url("../img/checkbox-off.svg") no-repeat;
+}
+
+.item-hotel input[type="checkbox"]:checked + .checkbox-indicator {
+  background: url("../img/checkbox-on.svg") no-repeat;
+}
+
+.item-hotel input[type="checkbox"]:disabled + .checkbox-indicator {
+  background: url("../img/checkbox-off-disabled.svg") no-repeat;
+}
+
+.item-hotel input[type="checkbox"]:disabled:checked + .checkbox-indicator {
+  background: url("../img/checkbox-on-disabled.svg") no-repeat;
+}
+
+.item-hotel input[type="checkbox"]:focus + .checkbox-indicator {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.apartments .item-motel {
+  display: inline-block;
+  position: relative;
+
+  margin-bottom: 25px;
+  padding-left: 40px;
+
+  cursor: pointer;
+}
+
+.item-motel input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  left: 0;
+
+  width: 26px;
+  height: 23px;
+
+  background-color: red;
+  background: url("../img/checkbox-off.svg") no-repeat;
+}
+
+.item-motel input[type="checkbox"]:checked + .checkbox-indicator {
+  background: url("../img/checkbox-on.svg") no-repeat;
+}
+
+.item-motel input[type="checkbox"]:disabled + .checkbox-indicator {
+  background: url("../img/checkbox-off-disabled.svg") no-repeat;
+}
+
+.item-motel input[type="checkbox"]:disabled:checked + .checkbox-indicator {
+  background: url("../img/checkbox-on-disabled.svg") no-repeat;
+}
+
+.item-motel input[type="checkbox"]:focus + .checkbox-indicator {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.apartments .item-apartments {
+  display: inline-block;
+  position: relative;
+
+  padding-left: 40px;
+
+  cursor: pointer;
+}
+
+.item-apartments input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  left: 0;
+
+  width: 26px;
+  height: 23px;
+
+  background-color: red;
+  background: url("../img/checkbox-off.svg") no-repeat;
+}
+
+.item-apartments input[type="checkbox"]:checked + .checkbox-indicator {
+  background: url("../img/checkbox-on.svg") no-repeat;
+}
+
+.item-apartments input[type="checkbox"]:disabled + .checkbox-indicator {
+  background: url("../img/checkbox-off-disabled.svg") no-repeat;
+}
+
+.item-apartments input[type="checkbox"]:disabled:checked + .checkbox-indicator {
+  background: url("../img/checkbox-on-disabled.svg") no-repeat;
+}
+
+.item-apartments input[type="checkbox"]:focus + .checkbox-indicator {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+
+
+.filter-range {
+  display: flex;
+  flex-direction: column;
+  width: 318px;
+  margin-left: auto;
+  padding-top: 15px;
+}
+
+.filter-range-title {
+  margin-bottom: 11px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+  height: 32px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 30px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls .max-price {
+  width: 100px;
+  padding-left: 57px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 34px 6px 34px;
+
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
+}
+/*
+.show-hotels {
+  box-sizing: border-box;
+  width: 137px;
+  height: 36px;
+  margin: 0 auto;
+}
+*/
 
 
 
@@ -1187,7 +1574,6 @@ img {
 }
 
 .hotel-column .type {
-  display: inline-block;
   width: 110px;
   height: 35px;
   margin-right: 6px;
@@ -1202,11 +1588,6 @@ img {
   min-width: 110px;
   margin-right: 6px;
 }
-
-
-
-
-
 
 .more-info {
   display: inline-block;
@@ -1254,6 +1635,8 @@ img {
 
 .main-footer {
   display: flex;
+  align-items: center;
+
   position: relative;
   margin-top: -120px;
 }
@@ -1265,6 +1648,7 @@ img {
 
 .hotels-footer {
   display: flex;
+  align-items: center;
 }
 
 .hotels-footer div {

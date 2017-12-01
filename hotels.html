@@ -49,66 +49,78 @@
             <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
               <div class="infrastructure">
                 <p class="title">
-                  <b>Инфраструктура:</b>
+                  Инфраструктура:
                 </p>
                 <ul class="infrastructure-list">
                   <li class="infrastructure-item">
-                    <input type="checkbox" name="pool" id="pool" checked>
-                    <label for="pool" tabindex="0">Бассейн</label>
+                    <label class="pool" tabindex="0">
+                      <input type="checkbox" class="visually-hidden" name="pool" id="pool" checked disabled>
+                      <span class="checkbox-indicator"></span>
+                      Бассейн
+                    </label>
                   </li>
                   <li class="infrastructure-item">
-                    <input type="checkbox" name="parking" id="parking">
-                    <label for="parking" tabindex="0">Парковка</label>
+                    <label class="parking" tabindex="0">
+                      <input type="checkbox" class="visually-hidden" name="parking" id="parking" disabled>
+                      <span class="checkbox-indicator"></span>
+                      Парковка
+                    </label>
                   </li>
                   <li class="infrastructure-item">
-                    <input type="checkbox" name="wi-fi" id="wi-fi">
-                    <label for="wi-fi" tabindex="0">Wi-Fi</label>
+                    <label class="wi-fi" tabindex="0">
+                      <input type="checkbox" class="visually-hidden" name="wi-fi" id="wi-fi" checked disabled>
+                      <span class="checkbox-indicator"></span>
+                      Wi-Fi
+                    </label>
                   </li>
                 </ul>
               </div>
 
               <div class="apartments">
                 <p class="title">
-                  <b>Тип жилья:</b>
+                  Тип жилья:
                 </p>
                 <ul class="apartments-list">
                   <li class="apartments-item">
-                    <input type="checkbox" name="hotel" id="hotel" checked>
-                    <label for="hotel" tabindex="0">Гостиница</label>
+                    <label class="item-hotel" tabindex="0">
+                      <input type="checkbox" class="visually-hidden" name="hotel" id="hotel" checked>
+                      <span class="checkbox-indicator"></span>
+                      Гостиница
+                    </label>
                   </li>
                   <li class="apartments-item">
-                    <input type="checkbox" name="motel" id="motel" checked>
-                    <label for="motel" tabindex="0">Мотель</label>
+                    <label class="item-motel" tabindex="0">
+                      <input type="checkbox" class="visually-hidden" name="motel" id="motel" checked>
+                      <span class="checkbox-indicator"></span>
+                      Мотель
+                    </label>
                   </li>
                   <li class="apartments-item">
-                    <input type="checkbox" name="apartments" id="apartments" checked>
-                    <label for="apartments" tabindex="0">Апартаменты</label>
+                    <label class="item-apartments" tabindex="0">
+                      <input type="checkbox" class="visually-hidden" name="apartments" id="apartments" checked>
+                      <span class="checkbox-indicator"></span>
+                      Апартаменты
+                    </label>
                   </li>
                 </ul>
               </div>
 
-              <div class="amount">
-                <p class="title">
-                  <b>Стоимость в сутки (р):</b>
-                </p>
-                <div class="min-max-amount">
-                  <output name="min-amount">
-                    От 0
-                  </output>
-                  <output name="max-amount">
-                    До 3000
-                  </output>
+              <div class="filter-range">
+                <div class="filter-range-title">
+                  Стоимость в сутки (р):
                 </div>
-                <div class="left-slider">
-                  <span tabindex="0">0</span>
-                  <!--Левый интерактивынй ползунок-->
+                <div class="price-controls">
+                  <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                  <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
                 </div>
-                <div class="right-slider">
-                  <span tabindex="0">0</span>
-                  <!--Правый интерактивынй позунок-->
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
                 </div>
-
-                <button class="show-hotels" type="submit">Показать</button>
+                <button class="btn-transparent" type="submit">Показать</button>
               </div>
             </form>
           </div>
@@ -120,7 +132,7 @@
               <h2 class="visually-hidden">Результаты поиска</h2>
               <div class="result-find">
                 <p>
-                  <b>Найдено: 3</b>
+                  Найдено: 3
                 </p>
               </div>
 
