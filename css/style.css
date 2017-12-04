@@ -224,12 +224,17 @@ img {
 }
 
 .find-hotel-form input {
+  font: inherit;
+  line-height: inherit;
+  text-transform: uppercase;
+
   background-color: #f2f2f2;
-  border: 0;
+  border: 2px solid #f2f2f2;
 }
 
 .find-hotel-form input:hover {
   background-color: #ebebeb;
+  border: 2px solid #ebebeb;
 }
 
 .find-hotel-form input:focus {
@@ -273,7 +278,7 @@ img {
   background-repeat: no-repeat;
 }
 
-.infrastructure p {
+.infrastructure .title {
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
@@ -433,6 +438,7 @@ img {
   display: inline-block;
   margin: 0;
   padding: 0;
+  vertical-align: bottom;
 }
 
 
@@ -567,6 +573,7 @@ img {
 .real-town span {
   display: inline-block;
   margin-bottom: 23px;
+  vertical-align: middle;
 }
 
 .real-town p {
@@ -678,6 +685,7 @@ img {
 .devil-bridge span {
   display: inline-block;
   margin-bottom: 23px;
+  vertical-align: middle;
 }
 
 .devil-bridge p {
@@ -709,6 +717,7 @@ img {
 .other-item span {
   display: inline-block;
   margin-bottom: 21px;
+  vertical-align: middle;
 }
 
 .other-item p {
@@ -734,6 +743,7 @@ img {
 .find-hotel .popup-button a {
   display: inline-block;
   padding: 30px 140px 30px 140px;
+  vertical-align: middle;
 }
 
 
@@ -748,15 +758,227 @@ img {
   background-position: -250px -150px;
 }
 
-.find-hotel-form {
+@-webkit-keyframes fadeInDown {
+  from {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+            animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -30px, 0);
+            transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+            animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -15px, 0);
+            transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0,-4px,0);
+            transform: translate3d(0,-4px,0);
+  }
+}
+
+@keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+            animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -30px, 0);
+            transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+            animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -15px, 0);
+            transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0,-4px,0);
+            transform: translate3d(0,-4px,0);
+  }
+}
+
+@-webkit-keyframes flipInX {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+            transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+            transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+            transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+            transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  to {
+    -webkit-transform: perspective(400px);
+            transform: perspective(400px);
+  }
+}
+
+@keyframes flipInX {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+            transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+            transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+            transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+            transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  to {
+    -webkit-transform: perspective(400px);
+            transform: perspective(400px);
+  }
+}
+
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+
+
+.form-wrapper {
+  display: none;
   position: absolute;
   padding: 55px 0;
-  width: 568px;
+  width: 570px;
   top: 0;
-  left: 316px;
+  left: 315px;
   -webkit-box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.15);
 
+  background-color: #ffffff;
+
+}
+
+.modal-show {
+  display: block;
+  -webkit-animation: flipInX 1s;
+          animation: flipInX 1s;
+}
+
+.modal-error {
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
 }
 
 .find-hotel-wrapper {
@@ -791,6 +1013,8 @@ img {
   position: absolute;
   right: 0;
   background-color: transparent;
+
+  cursor: pointer;
 }
 
 .btn-calendar::before {
@@ -873,7 +1097,8 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 226px;
+  width: 188px;
+  padding-right: 38px;
 }
 
 .adults .btn {
@@ -881,8 +1106,10 @@ img {
   height: 38px;
   border: none;
   border-radius: 0;
-  background-color: transparent;
+  background-color: #f2f2f2;
   position: absolute;
+
+  cursor: pointer;
 }
 
 .adults .btn::before , .adults .btn::after {
@@ -920,15 +1147,15 @@ img {
 .adults label {
   -ms-flex-item-align: center;
       align-self: center;
-      margin-right: 40px;
+      margin-right: 78px;
 }
 
 .adults input {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 114px;
+  width: 38px;
   height: 38px;
-  padding: 6px 41px 6px 54px;
+  padding: 6px 9px 6px 13px;
   font-size: 14px;
   line-height: 26px;
 }
@@ -940,7 +1167,8 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 179px;
+  width: 141px;
+  padding-right: 38px;
   position: relative;
 }
 
@@ -949,8 +1177,10 @@ img {
   height: 38px;
   border: none;
   border-radius: 0;
-  background-color: transparent;
+  background-color: #f2f2f2;
   position: absolute;
+
+  cursor: pointer;
 }
 
 .children .btn::before , .children .btn::after {
@@ -988,15 +1218,15 @@ img {
 .children label {
   -ms-flex-item-align: center;
       align-self: center;
-      margin-right: 27px;
+      margin-right: 65px;
 }
 
 .children input {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 114px;
+  width: 38px;
   height: 38px;
-  padding: 6px 41px 6px 54px;
+  padding: 6px 9px 6px 13px;
   font-size: 14px;
   line-height: 26px;
 }
@@ -1043,6 +1273,7 @@ img {
 .infrastructure-item .pool {
   display: inline-block;
   position: relative;
+  vertical-align: middle;
 
   margin-bottom: 25px;
   padding-left: 40px;
@@ -1081,6 +1312,7 @@ img {
 .infrastructure-item .parking {
   display: inline-block;
   position: relative;
+  vertical-align: middle;
 
   margin-bottom: 25px;
   padding-left: 40px;
@@ -1119,6 +1351,7 @@ img {
 .infrastructure-item .wi-fi {
   display: inline-block;
   position: relative;
+  vertical-align: middle;
 
   padding-left: 40px;
 
@@ -1165,6 +1398,7 @@ img {
 .apartments .item-hotel {
   display: inline-block;
   position: relative;
+  vertical-align: middle;
 
   margin-bottom: 25px;
   padding-left: 40px;
@@ -1203,6 +1437,7 @@ img {
 .apartments .item-motel {
   display: inline-block;
   position: relative;
+  vertical-align: middle;
 
   margin-bottom: 25px;
   padding-left: 40px;
@@ -1241,6 +1476,7 @@ img {
 .apartments .item-apartments {
   display: inline-block;
   position: relative;
+  vertical-align: middle;
 
   padding-left: 40px;
 
@@ -1326,6 +1562,7 @@ img {
 
 .price-controls label {
   display: inline-block;
+  vertical-align: middle;
 
   font-size: 14px;
   line-height: 30px;
@@ -1391,7 +1628,9 @@ img {
 }
 
 .range-toggle:hover {
-  background: #1c4f80;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .range-toggle-min {
@@ -1497,6 +1736,7 @@ img {
 .sort-button {
   position: relative;
   display: inline-block;
+  vertical-align: middle;
   width: 17px;
   height: 11px;
 }
@@ -1533,14 +1773,6 @@ img {
   background-image: url("../img/down-dir-active.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-}
-
-.down-button:hover::before {
-  background-image: url("../img/down-dir-hover.svg");
-}
-
-.down-button:active::before {
-  background-image: url("../img/down-dir-active.svg");
 }
 
 .result-catalog {
@@ -1590,38 +1822,64 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 363px;
+  min-width: 400px;
   padding: 24px 0 31px 0;
 }
 
 .hotel-column h1 {
   width: 100%;
   margin: 0;
+  margin-bottom: 4px;
+}
+
+.hotel-column .hotel-column-wrapper:first-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 110px;
+  margin-right: 6px;
 }
 
 .hotel-column .type {
-  min-width: 110px;
-  height: 35px;
-  margin-right: 6px;
+  display: block;
+  margin: 0;
+  margin-bottom: 17px;
+}
+
+.hotel-column .hotel-column-wrapper:last-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 150px;
 }
 
 .hotel-column .price {
-  width: calc(100% - 116px);
-  height: 35px;
+  display: block;
+  margin: 0;
+  margin-bottom: 17px;
 }
 
-.hotel-column .more-info {
-  min-width: 110px;
-  margin-right: 6px;
-}
+
 
 .more-info {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .book {
   display: inline-block;
+  vertical-align: middle;
 }
+
+
 
 .hotel .hotel-photo {
   -webkit-box-ordinal-group: 0;
@@ -1754,6 +2012,7 @@ img {
 
 .copy-link span {
   display: inline-block;
+  vertical-align: middle;
   margin-right: 8px;
 }
 

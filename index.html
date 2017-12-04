@@ -149,28 +149,29 @@
             Карта штата
           </h2>
 
+          <div class="form-wrapper modal-show">
             <form class="find-hotel-form" action="https://echo.htmlacademy.ru" method="post">
               <div class="find-hotel-wrapper">
                 <p class="check-in">
                   <label for="check-in">Дата заезда:</label>
-                  <input type="text" name="check-in" id="check-in" placeholder="24 апреля 2016">
+                  <input type="text" name="check-in" id="check-in" value="24 апреля 2016">
                   <button type="button" class="btn-calendar"><span class="visually-hidden">Календарь</span></button>
                 </p>
                 <p class="check-out">
                   <label for="check-out">Дата выезда:</label>
-                  <input type="text" name="check-out" id="check-out" placeholder="4 июля 2016">
+                  <input type="text" name="check-out" id="check-out" value="4 июля 2017">
                   <button type="button" class="btn-calendar"><span class="visually-hidden">Календарь</span></button>
                 </p>
                 <div class="wrapper">
                   <p class="adults">
                     <label for="adults">Взрослые:</label>
-                    <input type="text" name="adults" id="adults" placeholder="2">
+                    <input type="text" name="adults" id="adults" value="2">
                     <button type="button" class="btn btn-minus"><span class="visually-hidden">минус</span></button>
                     <button type="button" class="btn btn-plus"><span class="visually-hidden">плюс</span></button>
                   </p>
                   <p class="children">
                     <label for="children">Дети:</label>
-                    <input type="text" name="children" id="children" placeholder="0">
+                    <input type="text" name="children" id="children" value="0">
                     <button type="button" class="btn btn-minus"><span class="visually-hidden">минус</span></button>
                     <button type="button" class="btn btn-plus"><span class="visually-hidden">плюс</span></button>
                   </p>
@@ -180,6 +181,8 @@
               </div>
 
             </form>
+          </div>
+
 
           <iframe width="1200" height="593" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=%D0%A1%D0%B5%D0%B4%D0%BE%D0%BD%D0%B0&key=AIzaSyDRhg9KqfWkUhL9L30UhYAd_TtZ0AKrPtI" allowfullscreen></iframe>
         </section>
@@ -214,5 +217,7 @@
           </div>
       </footer>
     </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
