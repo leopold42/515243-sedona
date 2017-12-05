@@ -972,8 +972,8 @@ img {
 
 .modal-show {
   display: block;
-  -webkit-animation: flipInX 1s;
-          animation: flipInX 1s;
+  -webkit-animation: flipInX 0.6s;
+          animation: flipInX 0.6s;
 }
 
 .modal-error {
