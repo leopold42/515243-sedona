@@ -382,7 +382,7 @@ img {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.more-info a {
+.more-info {
   padding: 4px 17px;
 
   font-size: 14px;
@@ -393,16 +393,16 @@ img {
   background-color: #81b3d2;
 }
 
-.more-info a:hover {
+.more-info:hover {
   background-color: #669ec0;
 }
 
-.more-info a:active {
+.more-info:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
 
-.book a {
+.book {
   padding: 4px 17px;
 
   font-size: 14px;
@@ -413,11 +413,11 @@ img {
   background-color: #766357;
 }
 
-.book a:hover {
+.book:hover {
   background-color: #604e43;
 }
 
-.book a:active {
+.book:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
@@ -433,15 +433,6 @@ img {
 
   background-color: #f2f2f2;
 }
-
-.rating p {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  vertical-align: bottom;
-}
-
-
 
 /*--------------------------footer------------------------------*/
 .main-footer {
@@ -587,6 +578,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .more li {
